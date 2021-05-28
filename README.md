@@ -1,7 +1,7 @@
 # CV
-A CV Templete for phd application
+My CV for phd application
 
-This templete is powered by R package [pagedown](https://github.com/rstudio/pagedown) and modified on the basic of [pagedown_cv](https://github.com/ulyngs/pagedown-cv). The original templete is designed by [@ulyngs](https://github.com/ulyngs).
+It is powered by R package [pagedown](https://github.com/rstudio/pagedown) and modified on the basic of [pagedown_cv](https://github.com/ulyngs/pagedown-cv). The original templete is designed by [@ulyngs](https://github.com/ulyngs).
 
 I simplified the workflow of generating a CV through the [pagedown_cv](https://github.com/ulyngs/pagedown-cv) project, changed some CSS style, which made it more suitable for Ph.D. application, and made the pdf document available.
 
@@ -17,12 +17,11 @@ A csv document is stored in the `data` filter. Edit the csv as you like. Notice 
 
 `knit: pagedown::chrome_print` should be contained in the head of the `CV.rmd` document. If you don't want a pdf document, then it could be deleted.
 
-Some may fail to knit to a pdf in the case that R can not find the Chrome browser. You can solve the problem through running the `setchrome.R`. Remember to use your owm address of Chrome browser.
+If failing to knit to a pdf in the case that R can not find the Chrome browser,just run the `setchrome.R`.
 
 ### Sections
 
 The workflow is reading the data csv, transforming the table into suitable form, printing the table via `kable()` function and generating it into html or pdf. 
-So if you want to set new sections, just add new type in the csv and make sure a suitable table.
 
 There are several useful inside codes:
 
@@ -36,4 +35,4 @@ The new icon can be found on [Font Awesome](https://fontawesome.com/v5.15/how-to
 
 ### CSS
 
-If you are familiar with CSS, then you can adapt the style in the CV.css filter.
+`CSS/CV.css`
