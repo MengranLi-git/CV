@@ -1,0 +1,26 @@
+{
+    "id": "47B935FA",
+    "path": "F:/R/CV/CV.Rmd",
+    "project_path": "CV.Rmd",
+    "type": "r_markdown",
+    "hash": "215297124",
+    "contents": "",
+    "dirty": false,
+    "created": 1622232598910.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "50,0",
+        "scrollLine": "41"
+    },
+    "folds": "51|53|63|0|\n64|63|87|0|\n88|48|99|0|\n100|51|110|0|\n",
+    "lastKnownWriteTime": 1622232706,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1622232810291,
+    "read_only": false,
+    "read_only_alternatives": []
+}
