@@ -11,11 +11,11 @@ Just download the project, open the `CV.rmd` and knit it.
 
 ### Indivisual data
 
-A csv document is stored in the `data` filter. Edit the csv as you like. Notice the `date` should take the form of **yyyy-mm-dd**.
+A csv document is stored in the `data` filter. Edit the csv. Notice the `date` should take the form of **yyyy-mm-dd**.
 
 ### Knit to pdf
 
-`knit: pagedown::chrome_print` should be contained in the head of the `CV.rmd` document. If you don't want a pdf document, then it could be deleted.
+`knit: pagedown::chrome_print` should be contained in the head of the `CV.rmd` document.
 
 If failing to knit to a pdf in the case that R can not find the Chrome browser,just run the `setchrome.R`.
 
