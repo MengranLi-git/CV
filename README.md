@@ -1,7 +1,7 @@
 # CV
 A CV Templete for phd application
 
-This templete is powered by R package [pagedown](https://github.com/rstudio/pagedown) and modified on the basic of [pagedown_cv](https://github.com/ulyngs/pagedown-cv).
+This templete is powered by R package [pagedown](https://github.com/rstudio/pagedown) and modified on the basic of [pagedown_cv](https://github.com/ulyngs/pagedown-cv). The original templete is designed by [@ulyngs](https://github.com/ulyngs).
 
 I simplified the workflow of generating a CV through the [pagedown_cv](https://github.com/ulyngs/pagedown-cv) project, changed some CSS style, which made it more suitable for Ph.D. application, and made the pdf document available.
 
