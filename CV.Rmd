@@ -62,7 +62,7 @@ cv_entries %>%
 ```
 
 
-## Research & Academic {.work .nohead .vertical-top .set-width}
+## Research & Academics {.work .nohead .vertical-top .set-width}
 
 ```{r}
 research <- cv_entries %>% 

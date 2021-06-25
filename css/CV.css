@@ -60,7 +60,7 @@ br.pageBreak {
 
 p, li {
   font-size: var(--root-font-size);
-  line-height: 125%;
+  line-height: 120%;
 }
 
 /* title */
@@ -167,8 +167,11 @@ td {
   font-size: 1.0em;
 }
 
+
+
 .place {
   font-family: HGB1X_CNKI;
+  font-size: 1.0em;
 }
 /****** Page numbers ******/
 @page {
