@@ -17,7 +17,7 @@ library(lubridate)
 
 #### cv entries #####
 cv_entries <- read_csv("data/cv_entries.csv") %>% 
-  mutate(year_begin = year(date)) %>%
+  mutate(year_begin = date) %>%
   mutate(year_end = case_when(
     date_end == "present" ~ date_end,
     !is.na(date_end) ~ str_sub(date_end, 1, 4),
@@ -32,7 +32,7 @@ cv_entries <- read_csv("data/cv_entries.csv") %>%
 <!-- top row -->
 ```{block type="grid-item", echo=TRUE}
 ## Personal Summary {.summary}
-I have an excellent foundation and experience in Computational Statistics, statistical modeling and R programming. I am currently searching for a PhD position in Statistics to develop my academic career.
+I have an excellent foundation and experience in Computational Statistics, Statistical Modeling and R programming. I am currently searching for a PhD position in Statistics to develop my academic career.
 ```
 
 ```{block type='grid-item', echo=TRUE}

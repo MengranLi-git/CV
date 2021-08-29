@@ -1,0 +1,37 @@
+"0","knitr::opts_chunk$set(echo = FALSE)"
+"0","library(tidyverse)"
+"0","library(knitr)"
+"0","library(lubridate)"
+"0",""
+"0","#### cv entries #####"
+"0","cv_entries <- read_csv(""data/cv_entries.csv"") %>% "
+"0","  mutate(year_begin = date) %>%"
+"0","  mutate(year_end = case_when("
+"0","    date_end == ""present"" ~ date_end,"
+"0","    !is.na(date_end) ~ str_sub(date_end, 1, 4),"
+"0","    is.na(date_end) ~ date_end"
+"0","  )) %>%"
+"0","  mutate(year = ifelse((is.na(year_end) | year_begin == year_end),"
+"0","                      year_begin,"
+"0","                      str_c(year_begin, "" --- "", year_end)))"
+"2","
+[36m--[39m [1m[1mColumn specification[1m[22m [36m--------------------------------------------------------------[39m
+cols(
+  .default = col_logical(),
+  type = [31mcol_character()[39m,
+  date = [32mcol_double()[39m,
+  date_end = [31mcol_character()[39m,
+  what = [31mcol_character()[39m,
+  what_translation = [31mcol_character()[39m,
+  where = [31mcol_character()[39m,
+  addtitle1 = [31mcol_character()[39m,
+  additional_info = [31mcol_character()[39m,
+  addtitle2 = [31mcol_character()[39m,
+  additional_info2 = [31mcol_character()[39m,
+  additional_info3 = [31mcol_character()[39m,
+  short_cv = [31mcol_character()[39m,
+  category = [31mcol_character()[39m
+)
+[36mi[39m Use [38;5;235m[48;5;253m[38;5;235m[48;5;253m`spec()`[48;5;253m[38;5;235m[49m[39m for the full column specifications.
+
+"

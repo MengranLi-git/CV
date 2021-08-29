@@ -1,0 +1,7 @@
+"0","cv_entries %>% "
+"0","  filter(type == 'education', is.na(one_column_paged)) %>% "
+"0","  mutate(additional_info2 = replace_na(additional_info2, """")) %>% "
+"0","  mutate(what = str_c(""<span class='work-title'>"", what,""</span><span style='float:right;'><span class='place'>"",what_translation,""</span></span>"", ""<br class='work-break'>"", where, ""<br>"", additional_info2)) %>% "
+"0","#  mutate(place = ""<i class='fas fa-map-marker-alt'> Chengdu, China</i>"") %>%"
+"0","  select(year, what) %>% "
+"0","  kable()"
